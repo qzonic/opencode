@@ -53,3 +53,4 @@ def test_calc_dists_with_min_and_max_values() -> None:
 if __name__ == "__main__":
     test_create_csv_file()
     test_calc_dists_with_min_and_max_values()
+
