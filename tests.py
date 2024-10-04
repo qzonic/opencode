@@ -10,7 +10,7 @@ def test_create_csv_file() -> None:
     n: int = 500
     m: int = 10
     create_csv_file(n, m)
-    assert os.path.isfile("vectors.csv"), "The function `create_csv_file` should create a file."
+    assert os.path.isfile("vectors.csv"), "The function `create_csv_file` should create  a file."
     with open("vectors.csv", "r") as csv_file:
         vectors: list = list(csv.reader(csv_file))
         assert len(vectors) == n, f"The output file should contain {n} lines."
@@ -53,3 +53,4 @@ def test_calc_dists_with_min_and_max_values() -> None:
 if __name__ == "__main__":
     test_create_csv_file()
     test_calc_dists_with_min_and_max_values()
+
